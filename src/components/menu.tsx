@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 export default function Menu() {
     return (
-        <ul>
-            <li>Home</li>
-            <li>Sobre</li>
+        <ul className="menu">
+            <li><Link href="/" prefetch={true}>Home</Link></li>
+            <li><Link href="/sobre#empresa">Sobre</Link></li>
             <li>Menu</li>
         </ul>
     )
