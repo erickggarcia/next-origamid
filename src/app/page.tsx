@@ -1,3 +1,4 @@
+import ServerFetch from '@/components/server-fetch';
 import fs from 'node:fs/promises'
 
 export default async function HomePage() {
@@ -7,6 +8,7 @@ export default async function HomePage() {
   return (
     <main>
       <h1>Home</h1>
+      <ServerFetch/>
     </main>
   );
 }
